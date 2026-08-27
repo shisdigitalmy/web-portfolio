@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Detail - SHIS Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#ffffff",
+                      "primary-container": "#25d366",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#bbcbb9",
+                      "inverse-primary": "#3de273",
+                      "on-primary-container": "#005523",
+                      "background": "#f3fcef",
+                      "tertiary": "#585f6c",
+                      "on-tertiary": "#ffffff",
+                      "secondary": "#5f5e5e",
+                      "primary-fixed": "#66ff8e",
+                      "tertiary-fixed": "#dce2f3",
+                      "on-tertiary-container": "#424956",
+                      "secondary-fixed-dim": "#c9c6c5",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f3fcef",
+                      "on-background": "#151e16",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#3c4a3d",
+                      "on-tertiary-fixed-variant": "#404754",
+                      "surface-container": "#e7f1e4",
+                      "tertiary-container": "#b1b8c7",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-primary-fixed": "#002109",
+                      "surface-container-low": "#edf6e9",
+                      "surface-container-highest": "#dce5d8",
+                      "surface-dim": "#d3ddd0",
+                      "primary-fixed-dim": "#3de273",
+                      "on-primary-fixed-variant": "#005322",
+                      "surface": "#f3fcef",
+                      "outline": "#6c7b6b",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "secondary-container": "#e5e2e1",
+                      "primary": "#006d2f",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#c0c7d6",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-secondary-container": "#656464",
+                      "surface-tint": "#006d2f",
+                      "surface-container-high": "#e2ebde",
+                      "on-surface": "#151e16",
+                      "inverse-surface": "#2a332a",
+                      "surface-variant": "#dce5d8",
+                      "on-tertiary-fixed": "#151c27",
+                      "inverse-on-surface": "#eaf3e6",
+                      "on-secondary-fixed": "#1c1b1b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "4px",
+                      "md": "16px",
+                      "xl": "48px",
+                      "container_max_width": "1120px",
+                      "lg": "24px",
+                      "gutter": "24px",
+                      "columns": "12",
+                      "xs": "4px",
+                      "margin": "20px",
+                      "xxl": "80px",
+                      "sm": "8px",
+                      "safe": "env(safe-area-inset-bottom, 20px)"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Geist"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "headline-xl-mobile": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Hide scrollbar for horizontal scrolling elements */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen relative pb-32">
+<!-- Top Navigation (Mobile Simplified for Subpage) -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 h-16 flex items-center justify-between px-margin md:hidden">
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-label-sm text-label-sm font-medium">Back to Portfolio</span>
+</a>
+<div class="font-headline-md text-headline-md font-bold text-on-surface">SHIS Digital</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-16 md:pt-24 flex flex-col w-full">
+<!-- Hero Section -->
+<section class="w-full flex flex-col">
+<div class="w-full aspect-square relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A highly detailed close-up shot of a modern smartphone displaying a sleek e-commerce interface. The lighting is crisp and professional, highlighting the high-resolution screen against a clean, light-mode minimal desk environment. The aesthetic is corporate and modern, emphasizing digital performance and clean UI design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS_qVPWT670N_wkaZ5KPGJhrYVOQGe3UoFm-6nj-rAjPp5bSx7tN9ylviNT2ya7Sw5uQ5MWBvH0Y-vGZ37GpCBHfB6S6aApXTcZTgSAampwUHmapKc-7C-O8OI2pzRADXyAuZ_xTmDcEBJbwhRpVzaXwgsaOmciLqfVFHUF8hs70NJgMViBHq00n93xF5_hGss3sPsKUGHCL28Fq2EKc71MZq4oy2XN9uRsAO9tgwXFQI1sC7kwPOBKg"/>
+</div>
+<div class="px-margin py-xl flex flex-col gap-md bg-surface-container-lowest relative -mt-6 rounded-t-xl z-10 shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<img class="h-10 w-auto rounded border border-outline-variant/30" data-alt="A clean, minimalist local client logo representing a modern retail brand. Designed with sharp vector lines and a professional corporate aesthetic suitable for a high-performance agency case study." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHg1s_ix2hT4Yi1FAp7rrayAVjAnd_YTgQx-N_Lh8fR2DfN94yOGHSoGxBqfCCPNLS1SP2xk7lvszmZJUWBMD5d_J4nFz_xbiYtt-ZMqt3heAUvnueSRAv8xSmTUH5eO1OQ5eGbeLiRNsXzI6sQmzPzQqus3AFa6y8n_wjf9W5miigln-ZFaq6YvXuGwIBw5Itc8I5XCGdlHLaojhehc3wSH4l7oaAq0cIBpo_L-582oK-Lksjc43JGg"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">E-Commerce</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">Scaling Local Retail to Regional Dominance</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">How we helped 'Urban Threads' increase their online revenue by 215% within 6 months through targeted local SEO and conversion rate optimization.</p>
+<div class="grid grid-cols-2 gap-md mt-lg pt-lg border-t border-outline-variant/30">
+<div class="flex flex-col gap-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Services</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">SEO, CRO, Paid Social</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Timeline</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">6 Months</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics Bento -->
+<section class="px-margin py-xl flex flex-col gap-md bg-surface-container-low">
+<h2 class="font-headline-md text-headline-md mb-md">Key Results</h2>
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm flex flex-col justify-center items-center text-center border border-outline-variant/20">
+<span class="font-headline-lg text-headline-lg text-primary mb-1">+215%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Online Revenue</span>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm flex flex-col justify-center items-center text-center border border-outline-variant/20">
+<span class="font-headline-lg text-headline-lg text-primary mb-1">4.2x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ROAS on Social</span>
+</div>
+<div class="col-span-2 bg-surface-container-lowest p-md rounded-lg shadow-sm flex items-center justify-between border border-outline-variant/20">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary mb-1">#1 Rank</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">For 15 High-Intent Local Keywords</span>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+</div>
+</div>
+</section>
+<!-- Stacked Narrative (Challenge, Solution) -->
+<section class="px-margin py-xl flex flex-col gap-xxl bg-surface-container-lowest">
+<div class="flex flex-col gap-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant">warning</span>
+<h3 class="font-headline-md text-headline-md">The Challenge</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Urban Threads had a strong physical presence but their digital storefront was underperforming. They were losing local market share to larger national competitors who dominated search results. Their existing ad spend was yielding a negative ROI due to poor targeting and a high-friction checkout process.</p>
+<div class="w-full aspect-video rounded-lg overflow-hidden mt-sm">
+<img class="w-full h-full object-cover" data-alt="A professional shot of a modern retail store interior, slightly out of focus in the background, overlaid with translucent digital analytics charts indicating a downward trend. The lighting is bright and corporate, emphasizing the contrast between physical success and digital struggle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGBjaGfbm_k5DrNLDBZXN00ixp-i51CBUOQu2nLWfeq7LQEwa73W3e8lveShsDlprN0qp22KIqnb2t7PYhTxcmYWfzB5NCf4PMdCltrECsek3yZIWQJrBKe-BbMEgFYSkB2Kk8Brhr5D-0ICPALmHyDSviR9l2KdybLVk_--XcHYCSz7qQmmWdBtUvni-4S8cirxCQPs83nM2Y2zbVdLtuNI3YiguX5IPhAPglxFYyXbJq1K-TLUzHZw"/>
+</div>
+</div>
+<div class="flex flex-col gap-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+<h3 class="font-headline-md text-headline-md">Our Solution</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">We executed a 'Proof-First' local SEO strategy to capture high-intent buyers in their immediate radius. Simultaneously, we rebuilt their checkout flow to reduce friction, implementing mobile-first design principles. Finally, we launched hyper-targeted paid social campaigns featuring real local customer testimonials.</p>
+<div class="w-full aspect-video rounded-lg overflow-hidden mt-sm">
+<img class="w-full h-full object-cover" data-alt="A close up of a digital agency team member's hands typing on a laptop, with complex SEO analytics dashboards visible on an external monitor. The setting is a clean, bright, modern office with light wood and white accents, conveying professional expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIMXCunX1hLhvS_XnmBda2X9_bkf9cnM1TJJbnNEaQut2TD4pctdpxy7ZCEh8dwwINBPbGR612wScjkYnhi33BgR99Xx-dqZ5xWVyO8Db3BdY78-e9b3eEEORXtnE89IEgPydT2PCHS5YmhzUzUV3g5y2NaFCGwESIfamcHX-iRpb6mggD8n2o8ZeN4NdfJfxa_BRpV7Ny03MivM35Q2ZGdWi7Ied8WrvkWRfBE3723tWQGvD0dhnYGA"/>
+</div>
+</div>
+</section>
+<!-- Testimonial Slider (Horizontal Scroll) -->
+<section class="py-xl bg-surface-container">
+<div class="px-margin mb-md flex justify-between items-end">
+<h2 class="font-headline-md text-headline-md">Client Feedback</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">swipe</span> Swipe</span>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-md px-margin snap-x snap-mandatory pb-4">
+<div class="snap-center shrink-0 w-[85%] bg-surface-container-lowest p-lg rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/20 flex flex-col justify-between">
+<p class="font-body-md text-body-md italic text-on-surface mb-lg">"SHIS Digital didn't just build us a new site; they rebuilt our revenue engine. The local SEO results were immediate, and the ROAS on their social campaigns blew our expectations away."</p>
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A professional headshot of a confident local retail business owner standing inside their modern, well-lit store. They look reliable and satisfied. Corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvQikFstOhA5ICmoV5vE1e56rETtet3fiAR0J83I-15p62zvOesv7t_BnnnuEj4ikpAjfqRRjtAI8Gx7lpS18h6PssmmykFFgxP5nuWQoLmrFeCQ6pYtW3TmqB87T7zfC_25mSIXl_4z8ovDS8s9PWegKfhCokmus7kIoesnS3hZK1eTQCLw1UMxRvJ9TA-0JMP0MeDjeiW6DB0LgdZjilwi8vLRQz10QkU67NKQi1fxs-0brau05bAg"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Sarah Jenkins</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CEO, Urban Threads</span>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[85%] bg-surface-container-lowest p-lg rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/20 flex flex-col justify-between">
+<p class="font-body-md text-body-md italic text-on-surface mb-lg">"The team at SHIS operates with zero fluff. They analyzed our drop-off rates, fixed the checkout process, and the conversion numbers jumped almost overnight."</p>
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A professional headshot of a focused digital marketing director in a bright, modern office setting. Sharp lighting, clean corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhO-FdkNu3XYZRCx3V8b7DcFZcQ1ntfsEePFVxSkDDim2EEClbZ7i8eYQZmfEoXhO3Zq9o8p4nNMN3V_KqB7QkskIYUahB3gTd5uP69MegIie6VKzOWHQcOffs8p88l2CG2NQgBx2iZQbPNQdTb9I9lnhv3um7g_mZ1dWu-tlVb-30xlo3g7GbAok6-dNPCf6u9I-FnO-iBndwBQZQX0YIeTgVivEGLS1zVcS7e0H39XmX0xbm402TJg"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Marcus Thorne</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Marketing Director</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation (Contextual FAB for Detail Page - Replaced by Global FAB requirement) -->
+<!-- Applying BottomNavBar logic specifically requested: Sticky bottom WhatsApp CTA -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden flex justify-center items-center w-full pb-safe bg-surface-container-lowest/90 dark:bg-surface-container-highest/90 backdrop-blur-md border-t border-outline-variant/50 shadow-[0_-4px_24px_rgba(0,0,0,0.06)] h-20">
+<button class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full py-3 px-6 mx-4 mb-4 gap-2 w-[90%] font-label-sm text-label-sm font-bold hover:bg-[#1DA851] transition-colors scale-98 duration-100 relative overflow-hidden group">
+<!-- Online Pulse Indicator -->
+<span class="absolute left-4 w-2 h-2 rounded-full bg-white animate-pulse"></span>
+<span class="material-symbols-outlined fill">chat</span>
+<span>Chat with an Expert</span>
+</button>
+</nav>
+</body></html>

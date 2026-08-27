@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #006d2f;
+  --color-primary-container: #25d366;
+  --color-primary-hover: #1DA851;
+  --color-on-primary: #ffffff;
+  --color-surface: #f3fcef;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #edf6e9;
+  --color-surface-container: #e7f1e4;
+  --color-on-surface: #151e16;
+  --color-on-surface-variant: #3c4a3d;
+  --color-outline: #6c7b6b;
+  --color-outline-variant: #bbcbb9;
+  --color-error: #ba1a1a;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist);
+  --font-display: var(--font-inter);
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+:root {
+  --background: #f3fcef;
+  --foreground: #151e16;
+}
+
+* { scrollbar-width: thin; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist), system-ui, sans-serif;
+}
+
+h1,h2,h3 { font-family: var(--font-inter), system-ui, sans-serif; letter-spacing: -0.02em; }
+
+/* Focus ring */
+:focus-visible { outline: 2px solid #006d2f; outline-offset: 2px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

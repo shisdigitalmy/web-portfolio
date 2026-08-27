@@ -1,34 +1,62 @@
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-bun.lockb
 
+!.env.example
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 # Build output
-dist/
-build/
-out/
+# debug
+# dependencies
+# Env & secrets
+# env files (can opt-in for committing if needed)
+# Git
+# misc
+# next.js
+# OpenCode
+# OS & Editor
+# production
+# Rclone
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# testing
+# typescript
+# vercel
+*.log
+*.pem
+*.tmp
+*.tsbuildinfo
+.cache/
+.DS_Store
+.env
+.env*
+.env.*
+.idea/
 .next/
 .nuxt/
-.output/
-.cache/
-
-# Env & secrets
-.env
-.env.*
-!.env.example
-
-# OS & Editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.log
-npm-debug.log*
-
-# OpenCode
 .opencode/
-
-# Git
-*.tmp
+.output/
+.pnp.*
+.pnpm-debug.log*
+.rclone.conf
+.vercel
+.vscode/
+.yarn/*
+/.next/
+/.pnp
+/build
+/coverage
+/node_modules
+/out/
+build/
+bun.lockb
+dist/
+next-env.d.ts
+node_modules/
+npm-debug.log*
+out/
+package-lock.json
+pnpm-lock.yaml
+rclone.conf
+Thumbs.db
+yarn.lock
+yarn-debug.log*
+yarn-error.log*

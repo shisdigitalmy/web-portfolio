@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHIS Digital - Process</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&amp;family=Inter:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#25d366",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#bbcbb9",
+                        "inverse-primary": "#3de273",
+                        "on-primary-container": "#005523",
+                        "background": "#f3fcef",
+                        "tertiary": "#585f6c",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "primary-fixed": "#66ff8e",
+                        "tertiary-fixed": "#dce2f3",
+                        "on-tertiary-container": "#424956",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f3fcef",
+                        "on-background": "#151e16",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#3c4a3d",
+                        "on-tertiary-fixed-variant": "#404754",
+                        "surface-container": "#e7f1e4",
+                        "tertiary-container": "#b1b8c7",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed": "#002109",
+                        "surface-container-low": "#edf6e9",
+                        "surface-container-highest": "#dce5d8",
+                        "surface-dim": "#d3ddd0",
+                        "primary-fixed-dim": "#3de273",
+                        "on-primary-fixed-variant": "#005322",
+                        "surface": "#f3fcef",
+                        "outline": "#6c7b6b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e5e2e1",
+                        "primary": "#006d2f",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c0c7d6",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-secondary-container": "#656464",
+                        "surface-tint": "#006d2f",
+                        "surface-container-high": "#e2ebde",
+                        "on-surface": "#151e16",
+                        "inverse-surface": "#2a332a",
+                        "surface-variant": "#dce5d8",
+                        "on-tertiary-fixed": "#151c27",
+                        "inverse-on-surface": "#eaf3e6",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "md": "16px",
+                        "xl": "48px",
+                        "container_max_width": "1120px",
+                        "lg": "24px",
+                        "gutter": "24px",
+                        "columns": "12",
+                        "xs": "4px",
+                        "margin": "20px",
+                        "xxl": "80px",
+                        "sm": "8px",
+                        "safe": "env(safe-area-inset-bottom)"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Geist", "sans-serif"],
+                        "body-md": ["Geist", "sans-serif"],
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "label-sm": ["Geist", "sans-serif"],
+                        "headline-xl": ["Inter", "sans-serif"],
+                        "headline-xl-mobile": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .timeline-line {
+            width: 2px;
+            background: linear-gradient(to bottom, #25d366 0%, #bbcbb9 50%, #e7f1e4 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased pb-safe">
+<!-- Mobile Top Navigation (Hamburger) -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center h-16 px-margin max-w-container_max_width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">SHIS Digital</div>
+<button aria-label="Menu" class="p-2 text-on-surface">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24 pb-32 px-margin max-w-container_max_width mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile mb-4 text-on-background">The 'Solo Empire' Framework</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our proven methodology for transforming solo operators into high-performance, scalable digital empires.</p>
+</section>
+<!-- Vertical Timeline -->
+<section class="relative">
+<!-- Continuous Line -->
+<div class="absolute left-[27px] top-4 bottom-0 timeline-line z-0"></div>
+<div class="space-y-12 relative z-10">
+<!-- Step 1 -->
+<div class="flex gap-md group">
+<div class="flex-shrink-0 mt-1">
+<div class="w-14 h-14 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center shadow-sm group-hover:border-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-2xl font-variation-settings: 'FILL' 1;">foundation</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30 flex-grow">
+<span class="font-label-sm text-label-sm text-primary mb-1 block">Phase 1</span>
+<h3 class="font-headline-md text-headline-md mb-2">Foundation Audit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">We dissect your current digital presence, identifying bottlenecks and immediate quick wins for high-impact ROI.</p>
+<div class="bg-surface-container-low p-sm rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Timeline: 1 Week</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-md group">
+<div class="flex-shrink-0 mt-1">
+<div class="w-14 h-14 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center shadow-sm group-hover:border-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-2xl font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30 flex-grow">
+<span class="font-label-sm text-label-sm text-primary mb-1 block">Phase 2</span>
+<h3 class="font-headline-md text-headline-md mb-2">System Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Designing automated funnels and local SEO strategies tailored to dominate your specific market niche.</p>
+<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="A clean, minimalist UI dashboard mockup showing analytics and funnel conversion rates, set against a pristine white background with subtle green accents, soft lighting, modern corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAdf3ujwHH6PLu_zH06UBaR_Rh3qtp3tUR1UO9vdGjfpI-8aKZPG0XaM3SpktipmiV3xfzCng7AcbSoKLF92hWsRNb_wfC58JELfpTyx_BOgPhMZgymbukaDOIO0cdoexhw2Nkmksx5oeiX8LIPGMqVfP7g44tumq5fHdMh97USSBnWlYPbbykG4bxyqSBwFFh4lixhOqPv8CyT8Jp8t8Na1hkPZP6mh6JP-oYJiYPPiKr0kwVvdYxRw"/>
+<div class="bg-surface-container-low p-sm rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Timeline: 2-3 Weeks</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-md group">
+<div class="flex-shrink-0 mt-1">
+<div class="w-14 h-14 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center shadow-sm group-hover:border-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-2xl font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30 flex-grow">
+<span class="font-label-sm text-label-sm text-primary mb-1 block">Phase 3</span>
+<h3 class="font-headline-md text-headline-md mb-2">Execution &amp; Scale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Deployment of high-converting assets. Continuous optimization based on real-time data to maximize lead quality.</p>
+<div class="bg-surface-container-low p-sm rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">loop</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ongoing Optimization</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-16 bg-surface-container-high rounded-xl p-6 text-center border border-outline-variant/20">
+<h2 class="font-headline-md text-headline-md mb-3">Ready to build your empire?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Stop grinding. Start scaling with a predictable system.</p>
+<button class="w-full bg-on-background text-on-primary font-label-sm text-label-sm py-4 px-6 rounded-lg font-bold flex items-center justify-center gap-2 shadow-sm">
+                Apply for Audit
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile CTA) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-surface-container-lowest/90 backdrop-blur-md border-t border-outline-variant/50 shadow-[0_-4px_24px_rgba(0,0,0,0.06)] flex justify-center items-center pb-safe">
+<a class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full py-3 px-6 mx-4 my-4 gap-2 w-full max-w-[300px] hover:bg-[#1DA851] transition-colors active:scale-95 duration-100 shadow-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-label-sm text-label-sm font-bold">Chat with an Expert</span>
+<span class="relative flex h-3 w-3 ml-1">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+</span>
+</a>
+</nav>
+</body></html>

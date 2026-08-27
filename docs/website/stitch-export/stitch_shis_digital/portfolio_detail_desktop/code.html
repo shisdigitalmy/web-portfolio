@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Detail - SHIS Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&amp;family=Inter:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#25d366",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#bbcbb9",
+                        "inverse-primary": "#3de273",
+                        "on-primary-container": "#005523",
+                        "background": "#f3fcef",
+                        "tertiary": "#585f6c",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "primary-fixed": "#66ff8e",
+                        "tertiary-fixed": "#dce2f3",
+                        "on-tertiary-container": "#424956",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f3fcef",
+                        "on-background": "#151e16",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#3c4a3d",
+                        "on-tertiary-fixed-variant": "#404754",
+                        "surface-container": "#e7f1e4",
+                        "tertiary-container": "#b1b8c7",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed": "#002109",
+                        "surface-container-low": "#edf6e9",
+                        "surface-container-highest": "#dce5d8",
+                        "surface-dim": "#d3ddd0",
+                        "primary-fixed-dim": "#3de273",
+                        "on-primary-fixed-variant": "#005322",
+                        "surface": "#f3fcef",
+                        "outline": "#6c7b6b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e5e2e1",
+                        "primary": "#006d2f",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c0c7d6",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-secondary-container": "#656464",
+                        "surface-tint": "#006d2f",
+                        "surface-container-high": "#e2ebde",
+                        "on-surface": "#151e16",
+                        "inverse-surface": "#2a332a",
+                        "surface-variant": "#dce5d8",
+                        "on-tertiary-fixed": "#151c27",
+                        "inverse-on-surface": "#eaf3e6",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "md": "16px",
+                        "xl": "48px",
+                        "container_max_width": "1120px",
+                        "lg": "24px",
+                        "gutter": "24px",
+                        "columns": "12",
+                        "xs": "4px",
+                        "margin": "20px",
+                        "xxl": "80px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Geist", "sans-serif"],
+                        "body-md": ["Geist", "sans-serif"],
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "label-sm": ["Geist", "sans-serif"],
+                        "headline-xl": ["Inter", "sans-serif"],
+                        "headline-xl-mobile": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30 hidden md:flex">
+<div class="flex justify-between items-center h-20 px-margin md:px-xl max-w-container_max_width mx-auto w-full">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-background">SHIS Digital</div>
+<nav class="flex gap-lg items-center">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary" href="#">Portfolio</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Process</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Case Studies</a>
+</nav>
+<button class="bg-[#25d366] text-[#ffffff] px-4 py-2 rounded-lg font-label-sm text-label-sm font-bold flex items-center gap-2 hover:bg-[#1DA851] transition-colors">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                WhatsApp Us
+            </button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-20 pb-safe md:pb-0 relative">
+<!-- Breadcrumbs -->
+<div class="max-w-container_max_width mx-auto px-margin md:px-xl py-md">
+<nav aria-label="Breadcrumb" class="flex text-on-surface-variant font-label-sm text-label-sm">
+<ol class="inline-flex items-center space-x-1 md:space-x-2">
+<li class="inline-flex items-center">
+<a class="hover:text-primary transition-colors" href="#">Portfolio</a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined mx-1 text-sm" data-icon="chevron_right">chevron_right</span>
+<span aria-current="page" class="text-on-surface font-medium">E-commerce Transformation for Local Retailer</span>
+</div>
+</li>
+</ol>
+</nav>
+</div>
+<!-- Hero Section -->
+<section class="max-w-container_max_width mx-auto px-margin md:px-xl py-lg">
+<div class="mb-lg">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mb-sm">E-commerce Transformation for Local Retailer</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">A complete digital overhaul increasing online sales by 200% within the first quarter.</p>
+</div>
+<div class="aspect-video w-full rounded-xl overflow-hidden shadow-sm relative bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A high-quality, professional photograph showing a modern e-commerce website displayed on a sleek laptop screen, sitting on a clean, well-lit office desk. The lighting is soft and bright, emphasizing a clean, corporate light-mode aesthetic with crisp whites, soft grays, and subtle green accents. The mood is successful and professional, representing a digital agency's high-end portfolio work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV_777t0YlRkl4c2TKvgDBi-LWgFyIguV7M7x0nyZ6JzIyqSkbnaK4PU3cLQtK9krCglvNoVwSc7X1AXlSAGp2pk4nIe_vOD9-x0cpiyWwsYiTrsrZR7s6ps-DW4imWy3ZS1SP_LU3vGQwfWgUSE-F82_2pU49qKE_ZRJycOAeIUPyDHIFfXK1vWZiQgoAOEK1IdnX5H8J4xdl_Sj1VAE1tfgoiud6Rh75KxWqvVQgg1Psm-dshOEz1Q"/>
+</div>
+</section>
+<!-- Project Details Bento Grid -->
+<section class="max-w-container_max_width mx-auto px-margin md:px-xl py-xl grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Content -->
+<div class="md:col-span-8 flex flex-col gap-lg">
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Project Overview</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">The client, a prominent local hardware retailer, was struggling with an outdated online presence and sluggish sales. They needed a robust, high-converting e-commerce platform that reflected their brand's reliability and extensive inventory.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Our approach focused on streamlining the user journey, optimizing product discoverability, and implementing a seamless checkout process tailored for both B2B and B2C customers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-error" data-icon="report_problem">report_problem</span>
+                            The Challenge
+                        </h3>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant space-y-2">
+<li>High cart abandonment rate (75%)</li>
+<li>Slow page load times affecting SEO</li>
+<li>Poor mobile responsiveness</li>
+<li>Complex inventory management</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                            The Solution
+                        </h3>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant space-y-2">
+<li>Custom headless Shopify architecture</li>
+<li>Optimized one-page checkout flow</li>
+<li>Mobile-first responsive design</li>
+<li>Integrated ERP synchronization</li>
+</ul>
+</div>
+</div>
+<!-- Mockups -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Platform Mockups</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div class="aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A professional mockup of a mobile e-commerce interface displayed on a smartphone screen, angled slightly in a bright, modern studio setting. The UI is clean and minimalist, featuring a product grid and a prominent green 'Add to Cart' button. The lighting is bright and soft, consistent with a premium corporate agency aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMDDMNJJi8nvq7Qfe4kQk_GE4ovbl3DDYNhpVTr6dS6ZpFdbGA9oCJue4NV1MHq_4q-2jkHj7dFJbVzsd-KKwtTkstQUWmszQ-T7Mxb30XVIjpPFLFpXfxPGZX8pDuRNhQeNCi6sfTaM6llK2F6iynDztgn5xNjcpv8tu2evxRcLt1WFGwzwMT1BEAyfDwvcqHGqDrui-LNTylG9LuH7HBiY2LcQoj-Pq-HuSeVpJwFcEnOwwHzD-HMg"/>
+</div>
+<div class="aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A professional mockup showing a detailed product page on a tablet screen. The design is sleek and data-heavy, showing product specifications and customer reviews in a clean, easily readable format. The environment is a well-lit, minimalist workspace with soft shadows and a light-mode color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqDoGxmvI-yH15aLQ9XJ2QDFwqPOufbcrqKe-J1V1v2zeCxnLkXiUmLBugnBhXDp9jzSumhVGsWQ-7NTHWhDtnUFTk-CZuTb4VT8OB5kg9DHAsRVOv6Zo1KbovgzJKu2CtP7YYvzMXw8tbKrNdtMpC4SZOTX3fv6UE1cDxhzgoV74HfEp85tcCz58ZdzbBrj9BbaKrn4RH7TzHVNJOJUWvYgB1mu3X1daRmXlCoDOcm3FLkszb3gwGQg"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Sidebar -->
+<div class="md:col-span-4 relative">
+<div class="sticky top-28 flex flex-col gap-lg">
+<!-- Metrics Card -->
+<div class="bg-primary text-on-primary rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.06)]">
+<h3 class="font-headline-md text-headline-md mb-md">Key Results</h3>
+<div class="flex flex-col gap-md">
+<div>
+<div class="font-headline-lg text-headline-lg">+200%</div>
+<div class="font-label-sm text-label-sm opacity-90">Online Sales Increase</div>
+</div>
+<div class="w-full h-px bg-on-primary/20"></div>
+<div>
+<div class="font-headline-lg text-headline-lg">-40%</div>
+<div class="font-label-sm text-label-sm opacity-90">Cart Abandonment</div>
+</div>
+<div class="w-full h-px bg-on-primary/20"></div>
+<div>
+<div class="font-headline-lg text-headline-lg">1.2s</div>
+<div class="font-label-sm text-label-sm opacity-90">Avg. Page Load Time</div>
+</div>
+</div>
+</div>
+<!-- Client Info -->
+<div class="bg-surface-container-lowest rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-outline-variant/30">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-sm">Client Info</h4>
+<div class="font-body-md text-body-md text-on-surface mb-2"><strong>Industry:</strong> Retail &amp; Hardware</div>
+<div class="font-body-md text-body-md text-on-surface mb-2"><strong>Timeline:</strong> 12 Weeks</div>
+<div class="font-body-md text-body-md text-on-surface"><strong>Services:</strong> Web Design, E-commerce Dev, SEO</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-surface-container-lowest/90 dark:bg-surface-container-highest/90 backdrop-blur-md border-t border-outline-variant/50 shadow-[0_-4px_24px_rgba(0,0,0,0.06)] flex justify-center items-center pb-safe">
+<a class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full py-3 px-6 mx-4 my-4 gap-2 font-label-sm text-label-sm font-bold w-full hover:bg-[#1DA851] transition-colors scale-98 duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+            Chat with an Expert
+        </a>
+</nav>
+<!-- Desktop Sticky WhatsApp CTA -->
+<a class="hidden md:flex fixed bottom-lg right-lg z-50 bg-primary-container text-on-primary-container rounded-full py-3 px-6 gap-2 items-center font-label-sm text-label-sm font-bold shadow-[0_4px_24px_rgba(0,0,0,0.15)] hover:bg-[#1DA851] transition-all hover:-translate-y-1" href="#">
+<div class="relative flex items-center justify-center w-3 h-3 mr-1">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+</div>
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+        Chat with an Expert
+    </a>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-high dark:bg-surface-container-lowest pb-24 md:pb-0">
+<div class="max-w-container_max_width mx-auto px-margin py-xxl flex flex-col md:flex-row justify-between gap-xl">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">SHIS Digital</div>
+<div class="flex flex-col md:flex-row gap-lg md:gap-xl">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary underline transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary underline transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary underline transition-all" href="#">Local SEO</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary underline transition-all" href="#">Contact Us</a>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">© 2024 SHIS Digital. All rights reserved.</div>
+</div>
+</footer>
+</body></html>

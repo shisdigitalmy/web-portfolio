@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHIS Digital - About Us</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&amp;family=Inter:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#25d366",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#bbcbb9",
+                        "inverse-primary": "#3de273",
+                        "on-primary-container": "#005523",
+                        "background": "#f3fcef",
+                        "tertiary": "#585f6c",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "primary-fixed": "#66ff8e",
+                        "tertiary-fixed": "#dce2f3",
+                        "on-tertiary-container": "#424956",
+                        "secondary-fixed-dim": "#c9c6c5",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f3fcef",
+                        "on-background": "#151e16",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#3c4a3d",
+                        "on-tertiary-fixed-variant": "#404754",
+                        "surface-container": "#e7f1e4",
+                        "tertiary-container": "#b1b8c7",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed": "#002109",
+                        "surface-container-low": "#edf6e9",
+                        "surface-container-highest": "#dce5d8",
+                        "surface-dim": "#d3ddd0",
+                        "primary-fixed-dim": "#3de273",
+                        "on-primary-fixed-variant": "#005322",
+                        "surface": "#f3fcef",
+                        "outline": "#6c7b6b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e5e2e1",
+                        "primary": "#006d2f",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c0c7d6",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-secondary-container": "#656464",
+                        "surface-tint": "#006d2f",
+                        "surface-container-high": "#e2ebde",
+                        "on-surface": "#151e16",
+                        "inverse-surface": "#2a332a",
+                        "surface-variant": "#dce5d8",
+                        "on-tertiary-fixed": "#151c27",
+                        "inverse-on-surface": "#eaf3e6",
+                        "on-secondary-fixed": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "md": "16px",
+                        "xl": "48px",
+                        "container_max_width": "1120px",
+                        "lg": "24px",
+                        "gutter": "24px",
+                        "columns": "12",
+                        "xs": "4px",
+                        "margin": "20px",
+                        "xxl": "80px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Geist"],
+                        "body-md": ["Geist"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "headline-xl": ["Inter"],
+                        "headline-xl-mobile": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- Mobile Top App Bar (Simplified for mobile context where side nav is hidden) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm flex justify-between items-center h-20 px-margin md:px-xl max-w-container_max_width mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-on-surface" href="#">SHIS Digital</a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<main class="flex-grow pt-20 pb-safe pb-24 px-margin flex flex-col gap-xl">
+<!-- Hero / Title Section -->
+<section class="pt-xl text-center">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary mb-md">Our Story</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                We are a high-performance SME digital agency focused on proof-first credibility and measurable growth.
+            </p>
+</section>
+<!-- Founder Photo -->
+<section class="w-full">
+<div class="rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.06)] aspect-[4/5] w-full relative">
+<img class="w-full h-full object-cover" data-alt="A professional yet approachable portrait of the founder of a modern digital agency. They are standing in a bright, contemporary office space with minimalist decor. The lighting is natural and flattering, emphasizing a trustworthy and competent demeanor. The overall aesthetic is clean, corporate, and modern, aligning with a high-performance brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_9L2QlmF6nbE_ZdFew4MylzK4CQX1IsRu6qPbsc2GJYEcTE2d9kERuhW1uAFnGIT-z2GQHzcnMCgZcD_WbrlOZer4FOvdT6g1mNm-WB7hxNRfQ-vLNLT6YLweVTaYcGXtv8VWBXD9472UlvAL0UXyW8N2NtRWf5j9bBY7NjlD3CjnwLe2itHzw9yMWae237bUGWqNfQ4fMYNDM_7t6UN1l17ugU0sw1EMU4eUcsmi7Jvx5nNG7CYa1g"/>
+</div>
+</section>
+<!-- Founder Story -->
+<section class="bg-surface-container rounded-xl p-md shadow-[0_4px_24px_rgba(0,0,0,0.06)]">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">The Vision</h2>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>
+                    SHIS Digital was founded on a simple principle: businesses need transparent, results-driven digital strategies without the traditional agency fluff. We saw too many companies struggling to measure ROI on their digital investments.
+                </p>
+<p>
+                    Our approach strips away the vanity metrics. We focus on real-world local context, direct communication channels, and strategies that translate directly into business growth. We are your localized experts, committed to elevating your digital presence.
+                </p>
+</div>
+</section>
+<!-- Values Section -->
+<section class="flex flex-col gap-md">
+<h2 class="font-headline-md text-headline-md text-primary text-center mb-sm">Core Values</h2>
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-md shadow-sm flex flex-col items-start gap-sm">
+<div class="bg-primary-container/20 text-on-primary-container p-sm rounded-full">
+<span class="material-symbols-outlined fill text-2xl" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-label-sm text-label-sm font-bold text-on-surface">Transparency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Clear reporting, honest communication, and measurable outcomes. No hidden fees or vanity metrics.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-md shadow-sm flex flex-col items-start gap-sm">
+<div class="bg-primary-container/20 text-on-primary-container p-sm rounded-full">
+<span class="material-symbols-outlined fill text-2xl" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-label-sm text-label-sm font-bold text-on-surface">Performance-Driven</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Every strategy is built to convert. We prioritize ROI and continuous optimization for sustainable growth.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-md shadow-sm flex flex-col items-start gap-sm">
+<div class="bg-primary-container/20 text-on-primary-container p-sm rounded-full">
+<span class="material-symbols-outlined fill text-2xl" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-label-sm text-label-sm font-bold text-on-surface">Local Expertise</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We understand the nuances of local markets, ensuring your brand resonates with your target audience.</p>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-surface-container-lowest/90 backdrop-blur-md border-t border-outline-variant/50 shadow-[0_-4px_24px_rgba(0,0,0,0.06)] flex justify-center items-center pb-safe">
+<a class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full py-3 px-6 mx-4 mb-4 mt-4 gap-2 w-full max-w-sm hover:bg-[#1DA851] transition-colors active:scale-95 duration-100 shadow-sm" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm font-bold text-on-primary">Chat with an Expert</span>
+</a>
+</nav>
+</body></html>
