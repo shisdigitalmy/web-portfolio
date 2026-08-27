@@ -62,20 +62,22 @@
 | Images | ✅ Belum ada image berat — placeholder div sahaja, `next/image` belum dipakai (sesuai untuk MVP), max 200KB jika tambah nanti |
 | JS | ✅ Hanya Next + React, tiada carousel/library berat |
 | Caching | ✅ Static pages prerendered (○), portfolio SSG (●), API dynamic (ƒ) |
-| Lighthouse | ⚠️ Belum run manual — perlu `npm run start` + Lighthouse mobile di `/` & `/hubungi` di Stage 10 follow-up. Jangka ≥90/95/95 kerana minimal JS & font swap |
+| Lighthouse | ⚠️ Gagal di Windows env — `CHROME_INTERSTITIAL_ERROR` pada `http://localhost:3000` & `127.0.0.1:3000` (Chrome headless). Manual `Invoke-WebRequest http://localhost:3000` 200 OK, build static 18 pages. Jangka ≥90/95/95 kerana minimal JS & font swap — perlu run manual di laptop kau: `npm run start` lalu `npx lighthouse http://localhost:3000 --view` |
+| Bundle | ✅ `.next/static` 26 files, total ~962KB (uncompressed, termasuk chunks). OG 26KB. Tiada image berat. |
+| Render-blocking | ✅ Hanya `next/font` + Tailwind, tiada external CSS/JS |
 
-**Catatan:** Lakukan `npx lighthouse http://localhost:3000 --view` sebelum launch untuk skor sebenar — jangan reka.
+**Catatan:** Lighthouse gagal di CI Windows (interstitial) — bukan bug site. Jalankan manual di device kau sebelum claim prod-ready — jangan reka skor.
 
 ---
 
 ## 5. Known Limitations & Blokir Launch
 
-- [ ] **WA number placeholder** `60123456789` — ganti `NEXT_PUBLIC_WA_NUMBER` di `.env` sebelum launch (blocker)
-- [ ] **OG image** `public/og-default.png` belum ada — perlu 1200x630
-- [ ] **Privacy/Terms** masih `[PLACEHOLDER]` — perlu teks legal sebenar
-- [ ] **Portfolio** 3 items `isPlaceholder:true` — ganti dengan projek sebenar atau kekal badge placeholder (jangan publish sebagai real)
+- [x] **OG image** `public/og-default.png` 1200x630 26KB ✅ (generated 27/08)
+- [x] **Privacy/Terms** template Melayu siap — `app/privasi/page.tsx:1`, `app/terma/page.tsx:1` (perlu semakan peguam sebelum kontrak real)
+- [~] **Portfolio** 3 items `isPlaceholder:true` label `CONTOH:` jelas — jangan publish sebagai real, ganti bila ada projek
+- [ ] **WA number placeholder** `60123456789` — ganti `NEXT_PUBLIC_WA_NUMBER` di `.env.local` & Vercel env (blocker tinggal)
 - [ ] **Email forward** belum — `api/contact` hanya `console.log` (MVP limitation)
-- [ ] **Lighthouse score** belum diukur — wajib sebelum claim prod-ready
+- [ ] **Lighthouse score** gagal di Windows CI (`CHROME_INTERSTITIAL_ERROR`) — wajib run manual di laptop sebelum claim prod-ready
 
 ---
 
