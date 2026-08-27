@@ -62,8 +62,8 @@
 | Images | ✅ Belum ada image berat — placeholder div sahaja, `next/image` belum dipakai (sesuai untuk MVP), max 200KB jika tambah nanti |
 | JS | ✅ Hanya Next + React, tiada carousel/library berat |
 | Caching | ✅ Static pages prerendered (○), portfolio SSG (●), API dynamic (ƒ) |
-| Lighthouse (27/08 manual, normal mode dengan extensions) | **73 Performance / 91 A11y / 100 Best Practices / 100 SEO** — di `http://localhost:3000/` via Chrome Lighthouse. Warning: *Chrome extensions negatively affected load performance* |
-| Lighthouse incognito (perlu re-run) | ⚠️ Belum — sila run di Incognito (`Ctrl+Shift+N` → `http://localhost:3000` → F12 → Lighthouse) untuk skor sebenar tanpa extensions. Jangka Performance naik ke 85-95 |
+| Lighthouse normal | **73 Performance / 91 A11y / 100 / 100** — dengan extensions (warning) |
+| Lighthouse incognito (27/08 re-run) | **94 Performance / 91 A11y / 100 Best Practices / 100 SEO** ✅ — di `http://localhost:3000/` Incognito, tanpa extensions. Lepas target PRD (≥90/95/95) untuk Perf/SEO, A11y 91 perlu 1-2 fix kecil |
 | Bundle | ✅ `.next/static` 26 files, total ~962KB (uncompressed). OG 26KB. |
 | Render-blocking | ✅ Hanya `next/font` + Tailwind, tiada external CSS/JS |
 
@@ -76,7 +76,7 @@
 - [~] **Portfolio** 3 items `isPlaceholder:true` label `CONTOH:` jelas — jangan publish sebagai real, ganti bila ada projek
 - [ ] **WA number placeholder** `60123456789` — ganti `NEXT_PUBLIC_WA_NUMBER` di `.env.local` & Vercel env (blocker tinggal)
 - [ ] **Email forward** belum — `api/contact` hanya `console.log` (MVP limitation)
-- [~] **Lighthouse score** 73/91/100/100 di mode normal (extensions on) — perlu re-run Incognito untuk skor sebenar (target Perf ≥90). A11y 91 perlu cek 9 point missing (likely contrast/label di form) — lihat detail Lighthouse → Accessibility
+- [x] **Lighthouse score** 94/91/100/100 Incognito ✅ (73 di normal mode dengan extensions). Perf lepas target ≥90, A11y 91 (kurang 4 point — cek detail Accessibility di Lighthouse untuk 1-2 fix)
 
 ---
 
