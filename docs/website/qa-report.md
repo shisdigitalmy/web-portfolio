@@ -62,11 +62,10 @@
 | Images | ✅ Belum ada image berat — placeholder div sahaja, `next/image` belum dipakai (sesuai untuk MVP), max 200KB jika tambah nanti |
 | JS | ✅ Hanya Next + React, tiada carousel/library berat |
 | Caching | ✅ Static pages prerendered (○), portfolio SSG (●), API dynamic (ƒ) |
-| Lighthouse | ⚠️ Gagal di Windows env — `CHROME_INTERSTITIAL_ERROR` pada `http://localhost:3000` & `127.0.0.1:3000` (Chrome headless). Manual `Invoke-WebRequest http://localhost:3000` 200 OK, build static 18 pages. Jangka ≥90/95/95 kerana minimal JS & font swap — perlu run manual di laptop kau: `npm run start` lalu `npx lighthouse http://localhost:3000 --view` |
-| Bundle | ✅ `.next/static` 26 files, total ~962KB (uncompressed, termasuk chunks). OG 26KB. Tiada image berat. |
+| Lighthouse (27/08 manual, normal mode dengan extensions) | **73 Performance / 91 A11y / 100 Best Practices / 100 SEO** — di `http://localhost:3000/` via Chrome Lighthouse. Warning: *Chrome extensions negatively affected load performance* |
+| Lighthouse incognito (perlu re-run) | ⚠️ Belum — sila run di Incognito (`Ctrl+Shift+N` → `http://localhost:3000` → F12 → Lighthouse) untuk skor sebenar tanpa extensions. Jangka Performance naik ke 85-95 |
+| Bundle | ✅ `.next/static` 26 files, total ~962KB (uncompressed). OG 26KB. |
 | Render-blocking | ✅ Hanya `next/font` + Tailwind, tiada external CSS/JS |
-
-**Catatan:** Lighthouse gagal di CI Windows (interstitial) — bukan bug site. Jalankan manual di device kau sebelum claim prod-ready — jangan reka skor.
 
 ---
 
@@ -77,7 +76,7 @@
 - [~] **Portfolio** 3 items `isPlaceholder:true` label `CONTOH:` jelas — jangan publish sebagai real, ganti bila ada projek
 - [ ] **WA number placeholder** `60123456789` — ganti `NEXT_PUBLIC_WA_NUMBER` di `.env.local` & Vercel env (blocker tinggal)
 - [ ] **Email forward** belum — `api/contact` hanya `console.log` (MVP limitation)
-- [ ] **Lighthouse score** gagal di Windows CI (`CHROME_INTERSTITIAL_ERROR`) — wajib run manual di laptop sebelum claim prod-ready
+- [~] **Lighthouse score** 73/91/100/100 di mode normal (extensions on) — perlu re-run Incognito untuk skor sebenar (target Perf ≥90). A11y 91 perlu cek 9 point missing (likely contrast/label di form) — lihat detail Lighthouse → Accessibility
 
 ---
 
